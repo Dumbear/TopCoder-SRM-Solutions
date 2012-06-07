@@ -33,7 +33,7 @@ public class GreedyTravelingSalesman {
     }
 
     private int getDistance(char thousand, char hundred, char ten, char one) {
-        return 1000 * (thousand - '0') + 100 * (hundred - '0') + 10 * (ten - '0') + 1 * (one - '0');
+        return 1000 * (thousand - '0') + 100 * (hundred - '0') + 10 * (ten - '0') + (one - '0');
     }
 
     private int worstDistance(int n, int[,] distance) {
